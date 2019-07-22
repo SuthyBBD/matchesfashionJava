@@ -66,7 +66,7 @@ public class Main {
     }
 
     public static void main(String[] args) throws Exception {
-        String path = "input2.txt";
+        String path = "Runnable/input2.txt";
         HashMap<String, Integer> wordMap = parseString(args[0]);
         HashMap<Integer, HashMap<String, Integer>> resultMap;
         resultMap = findMaxElements(wordMap);
