@@ -1,6 +1,7 @@
 #Please Read the instructions carefully
 
-This repo contains Main.ava, which is a Java 8 solution for the matchesfashion assignment
+This repo contains Main.java, which is a Java 8 solution for the matchesfashion assignment
+It has been compiled and the result, Main.class, is in the java folder of this solution, ready to be run from the terminal
 
 Included are 4 input files which I have used as test input in developing this solution - 1-3 are the examples from the assignment
 and warOfWorlds.txt is the entire book War of Worlds by H. G. Wells
