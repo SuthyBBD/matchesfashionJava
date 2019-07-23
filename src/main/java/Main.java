@@ -21,11 +21,13 @@ public class Main {
             String line = reader.readLine().trim();
             if (line.length() > 0) {
                 for (String word : line.toLowerCase().replaceAll("[^a-z' ]", " ").split("\\s+")) {
-                    Integer index = wordMap.get(word);
-                    if (index == null) {
-                        index = 0;
+                    if (!word.matches("[']*")) {
+                        Integer index = wordMap.get(word);
+                        if (index == null) {
+                            index = 0;
+                        }
+                        wordMap.put(word, ++index);
                     }
-                    wordMap.put(word, ++index);
                 }
             }
         }
@@ -66,7 +68,6 @@ public class Main {
     }
 
     public static void main(String[] args) throws Exception {
-        String path = "input2.txt";
         HashMap<String, Integer> wordMap = parseString(args[0]);
         HashMap<Integer, HashMap<String, Integer>> resultMap;
         resultMap = findMaxElements(wordMap);
